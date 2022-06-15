@@ -1,13 +1,15 @@
 import * as React from "react"
 import { formatNumTweets, formatNumFollowers } from "../../utils/format"
 import "./UserProfile.css"
+import ProfilePic from "../../assets/CodePath_profile.jpg"
 
 export default function UserProfile({ userProfile }) {
   return (
     <div className="col user-profile">
       <div className="card">
         <div className="card-bg" />
-        <CardContent name={userProfile.name} handle={userProfile.handle} interests={userProfile.interests} location={userProfile.location} bio={userProfile.bio} />
+        <CardContent name={userProfile.name} handle={userProfile.handle} interests={userProfile.interests} 
+                    location={userProfile.location} bio={userProfile.bio} profilePicture={userProfile.profilePicture}/>
         <CardFooter numTweets={userProfile.numTweets} numFollowing={userProfile.numFollowing} numFollowers={userProfile.numFollowers} />
       </div>
     </div>
@@ -18,9 +20,7 @@ export function CardContent(props) {
   return (
     <div className="card-content">
       <span className="fa-stack add-picture-icon">
-        <i className="fas fa-camera fa-stack-2x">
-          <i className="fas fa-plus fa-stack-1x"></i>
-        </i>
+        <img className = "profile-pic" src={ProfilePic} width ={30} height={30} />
       </span>
       <div className="twitter-handle">
         <h3>{props.name}</h3>

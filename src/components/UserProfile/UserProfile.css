@@ -6,7 +6,7 @@
 }
 .card {
   background: white;
-  height: 300px;
+  height: 230px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   display: flex;
 }
 .card-content .fa-stack {
-  background: var(--twitter-blue);
+  background: white;
   color: white;
   padding: 20px;
   border-radius: 50%;
@@ -30,6 +30,12 @@
   margin-left: 10px;
   transform: translateY(-23px);
 }
+.card-content .profile-pic {
+  margin-left: -16px;
+  transform: translateY(-15px);
+  border-radius: 50%;
+}
+
 .card-content .fa-camera {
   transform: translateY(-16px);
 }
@@ -59,7 +65,7 @@
   margin-bottom: 5px;
 }
 .card-footer {
-  height: 70px;
+  height: 60px;
   margin: 10px 0px -10px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
