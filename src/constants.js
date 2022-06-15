@@ -3,6 +3,11 @@ export const codepathUserProfile = {
   handle: "codepath",
   numTweets: 1299,
   numFollowers: 2500000,
+  profilePicture: "./assets/CodePath_profile.jpg",
+  numFollowing: 4200000,
+  interests: "Programming",
+  location: "USA",
+  bio: "Hello, this is a biography",
 }
 
 export const firstTweet = {
